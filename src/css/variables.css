@@ -1,0 +1,29 @@
+
+/* main colorset */
+:root {
+    --main-color: #333;
+    --sub-color: #ccc;
+    --sub2-color: #9c9c9c;
+    --point-color: #fee500;
+    --alert-color: #ff622a;
+    --bg-color: #fff;
+    --bg2-color: #f6f6f6;
+    --chat-bg-color: #abc1d1;
+    --border-color: #e8e8e8;
+    --common-padding: 20px;
+}
+
+/* darkmode colorset */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-color: #f5f5f5;
+        --sub-color: #999;
+        --sub2-color: #a5a5a5;
+        --point-color: #fee83a;
+        --alert-color: #ff622a;
+        --bg-color: #383838;
+        --bg2-color: #2d2d2d;
+        --chat-bg-color: #1c1c1e;
+        --border-color: #4e4e4e;
+    }
+}

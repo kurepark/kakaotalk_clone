@@ -1,0 +1,152 @@
+.shortcuts_list {
+    overflow: hidden;
+    padding: 0 10px 15px;
+}
+
+.shortcuts_item {
+    float: left;
+    width: 25%;
+}
+
+.shortcuts_item:nth-child(4n+1) {
+    clear: both;
+}
+
+.shortcuts_link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.shortcuts {
+    margin-top: 15px;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    min-height: 36px;
+}
+
+.openchat_list {
+    padding: 0 var(--common-padding) 30px;
+}
+
+.openchat_item + .openchat_item {
+    border-top: 1px solid var(--border-color);
+}
+
+.openchat_link {
+    display: flex;
+    padding: 12px 0;
+    align-items: center;
+}
+
+.openchat_info {
+    overflow: hidden;
+    flex: 1;
+}
+
+.openchat_title {
+    font-size: 18px;
+}
+
+.openchat_tags {
+    margin-top: 10px;
+    color: var(--sub2-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.openchat_status {
+    overflow: hidden;
+    margin-top: 5px;
+    color: var(--sub2-color);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.openchat_status .status_thumb {
+    overflow: hidden;
+    position: relative;
+    margin-right: 5px;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.openchat_status .status_thumb::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: inherit;
+    content: '';
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+
+.openchat_status .status_thumb > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.openchat_status .status::before {
+    margin: 1px 5px 0;
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: var(--sub2-color);
+    content: '';
+}
+
+.openchat_status .status.status_type_active {
+    color: #ff63c3;
+}
+
+.openchat_status .status.status_type_30minutes {
+    color: #4978f4;
+}
+
+.openchat_info-thumb {
+    position: relative;
+    margin-left: 14px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    width: 120px;
+    height: 120px;
+}
+
+.openchat_info-thumb::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: inherit;
+    content: '';
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+
+.openchat_info-thumb > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,98 @@
+.header {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 30px var(--common-padding) 10px;
+    background-color: var(--bg-color);
+    align-items: center;
+    z-index: 5;
+}
+
+.header::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+    height: 30px;
+    content: '';
+}
+    
+@media (prefers-color-scheme: dark) {
+    .header::after {
+        background-image: linear-gradient(to bottom, rgba(56,56,55,1), rgba(56,56,56,0));
+    }
+}
+
+.header_title {
+    font-size: 28px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.header_functions  {
+    margin-right: -15px;
+}
+
+.header_functions::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.header_functions [class^="header_link"] {
+    position: relative ;
+    display: block;
+    padding: 10px 15px;
+    float: left;
+} 
+
+.info_layer {
+    position: absolute;
+    padding: 10px 15px;
+    right: 15px;
+    top: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: var(--point-color);
+    border-radius: 6px;
+    white-space: nowrap;
+    z-index: 5;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    opacity: 0;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.08);
+    animation: layer_fadeIn_animation 5s ease-in-out;
+    -webkit-animation: layer_fadeIn_animation 5s ease-in-out;
+}
+
+.header_badge_new {
+    overflow: hidden;
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    color: transparent;
+    width: 5px;
+    height: 5px;
+    background-color: var(--alert-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: alertBadge_fadeInOut_animation 1.5s ease-in-out infinite;
+    -webkit-animation: alertBadge_fadeInOut_animation 1.5s ease-in-out infinite;
+}
+
+.info_layer::before {
+    position: absolute;
+    top: -11px;
+    right: 5px;
+    border: 6px solid transparent;
+    border-bottom-color: var(--point-color);
+    content: '';
+}

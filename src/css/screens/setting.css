@@ -1,0 +1,50 @@
+.setting_box + .setting_box {
+    border-top: 1px solid var(--border-color);
+}
+
+.setting_list {
+    padding: 15px var(--common-padding) 30px;
+}
+
+.setting_item + .setting_item {
+    border-top: 1px solid var(--border-color);
+}
+
+.setting_link {
+    padding: 16px 0;
+    display: flex;
+    align-tiems: center;
+}
+
+.setting_icon {
+    position: relative;
+    margin-right: 20px;
+}
+
+.setting_text {
+    flex: 1;
+}
+
+.setting_sub_text {
+    color: var(--sub2-color);
+    font-size: 14px;
+}
+
+.setting_badge_new {
+    overflow: hidden;
+    display: inline-block;
+    margin: -1px 0 0 5px;
+    color: #fff;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    background-color: var(--alert-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+vertical-align: top;
+}

@@ -1,0 +1,82 @@
+.nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--bg2-color);
+    border-top: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 -3px 3px 0 rgba(0,0,0,0.02);
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_item {
+    flex: 1;
+}
+
+.nav_link {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav_link[aria-selected="true"] .fas {
+    opacity: 1;
+    animation: navScale_animation 0.3s ease-in-out forwards;
+    -webkit-animation: navScale_animation 0.3s ease-in-out forwards;
+}
+
+.nav_link .fas {
+    transform: scale(0.8);
+    opacity: 0.4;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+.nav_link .nav_ico {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav_badge_alert {
+    position: absolute;
+    top: -6px;
+    right: -7px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 20px;
+    background-color: var(--alert-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: alertBadge_bounce_animation 1s ease-in-out infinite;
+    -webkit-animation: alertBadge_bounce_animation 1s ease-in-out infinite;
+}
+
+.nav_badge_new {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: -7px;
+    color: transparent;
+    width: 5px;
+    height: 5px;
+    background-color: var(--alert-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: alertBadge_fadeInOut_animation 1.5s ease-in-out infinite;
+    -webkit-animation: alertBadge_fadeInOut_animation 1.5s ease-in-out infinite;
+}

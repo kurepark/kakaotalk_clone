@@ -1,0 +1,147 @@
+.user_box {
+    margin: 0 var(--common-padding);
+}
+
+.user_link {
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+}
+
+.user_box-thumb {
+    position: relative;
+    margin-right: 14px;
+    width: 70px;
+    height: 70px;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+.user_box-thumb::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    content: '';
+}
+
+.user_box-thumb > img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user_box-thumb.user_box_thumb_type_large {
+    width: 80px;
+    height: 80px;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+}
+
+.user_box-thumb.user_box_thumb_type_small {
+    width: 60px;
+    height: 60px;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+
+.user_box-thumb_new {
+    overflow: hidden;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-color: var(--alert-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.user_box-info {
+    overflow: hidden;
+    flex: 1;
+}
+
+.user_name {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.user_more {
+    margin-left: 14px;
+    text-align: right;
+}
+
+.user_more .chat_time {
+    display: block;
+    color: var(--sub2-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.user_more .chat_badge_count {
+    display: inline-block;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    background-color: var(--alert-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+} 
+
+.user_more .channel_count {
+    color: var(--sub-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user_more .channel_count .fas {
+    margin-left: 5px;
+}
+
+.user_more .chat_myself {
+    opacity: 0.9;
+}
+
+.user_chat_preview {
+    margin-top: 5px;
+    font-weight: 300;;
+    color: var(--sub2-color);
+}
+
+.user_personal_info {
+    margin-top: 5px;
+    font-weight: 300;;
+    color: var(--sub2-color);
+}
+
+.user_personal_info .info_status {
+    margin: 1px 0 0 5px;
+    display: inline-block;
+    color: var(--alert-color);
+    vertical-align: top;
+}
