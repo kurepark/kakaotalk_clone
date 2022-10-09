@@ -51,6 +51,7 @@
 }
 
 .chat_box.is_my .chat_item .chat_msg {
+    color: #333;
     text-align: left;
     background-color: var(--point-color);
 }
@@ -228,6 +229,7 @@
 .chat_btn_emogi {
     position: absolute;
     margin: 5px 0 4px;
+    color: var(--main-color);
     top: 0;
     right: 40px;
 }
