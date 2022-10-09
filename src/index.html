@@ -28,10 +28,45 @@
 
         <!-- kokoa talk -->
         <main class="main_wrap">
-            <!-- kokoa header -->
-            <header class="header"></header>
             <!-- kokoa talk content -->
-            <div class="content"></div>
+            <div class="content">
+                <div class="index_box">
+                    <h1 class="index_title">캐릭터톡에 오신걸 환영합니다</h1>
+                    <p class="index_desc">
+                        캐릭터톡 계정이 있다면<br />이메일 혹은 전화번호로
+                        로그인해주세요
+                    </p>
+                    <div class="index_form_box">
+                        <form
+                            class="index_form"
+                            action="./html/friends.html"
+                            method="get"
+                        >
+                            <input
+                                type="text"
+                                class="index_input"
+                                placeholder="이메일 또는 전화번호"
+                                required
+                            />
+                            <input
+                                type="password"
+                                class="index_input"
+                                placeholder="비밀번호 입력"
+                                required
+                            />
+                            <button type="submit" class="index_btn_login">
+                                로그인
+                            </button>
+                        </form>
+                        <a href="#" type="button" class="index_link_signup">
+                            회원가입
+                        </a>
+                        <a href="#" class="index_link_find_account"
+                            >캐릭터톡 계정/비밀번호 찾기</a
+                        >
+                    </div>
+                </div>
+            </div>
         </main>
         <script
             src="https://kit.fontawesome.com/6478f529f2.js"

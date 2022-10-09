@@ -1,0 +1,124 @@
+
+/* main colorset */
+:root {
+    --main-color: #333;
+    --sub-color: #ccc;
+    --sub2-color: #9c9c9c;
+    --point-color: #fee500;
+    --alert-color: #ff622a;
+    --bg-color: #fff;
+    --bg2-color: #f6f6f6;
+    --chat-bg-color: #abc1d1;
+    --border-color: #e8e8e8;
+    --common-padding: 20px;
+}
+
+/* darkmode colorset */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-color: #f5f5f5;
+        --sub-color: #999;
+        --sub2-color: #a5a5a5;
+        --point-color: #fee83a;
+        --alert-color: #ff622a;
+        --bg-color: #383838;
+        --bg2-color: #2d2d2d;
+        --chat-bg-color: #1c1c1e;
+        --border-color: #4e4e4e;
+    }
+}
+
+.main_wrap {
+    overflow: hidden;
+    padding-top: 30px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 80px 0 75px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.content_inner {
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 60px 0 30px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#splash_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    color: #733C3C;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--point-color);
+    z-index: 1000;
+    animation: hideSplash_animation 0.3s ease-out forwards 0.8s;
+    -webkit-animation: hideSplash_animation 0.3s ease-out forwards 0.8s;
+}
+
+#pc_banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--point-color);
+    z-index: 1000;
+}
+
+.pc_banner_icon {
+    margin-bottom: 20px;
+    color: #733C3C;
+}
+
+.pc_banner_msg {
+    margin-bottom: 25px;
+    padding: 0 var(--common-padding);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.pc_link {
+    margin: 10px 0;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    background-color: #733C3C;
+    border-radius:6px;;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+}
+
+@media (min-width: 600px) {
+    #pc_banner {
+        display: flex;
+    }
+}
