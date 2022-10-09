@@ -95,6 +95,7 @@
 .pc_banner_msg {
     margin-bottom: 25px;
     padding: 0 var(--common-padding);
+    color: #333;
     font-size: 20px;
     font-weight: bold;
     line-height: 24px;
