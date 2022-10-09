@@ -67,8 +67,17 @@
     -o-border-radius: 6px;
     opacity: 0;
     box-shadow: 0 3px 5px rgba(0,0,0,0.08);
-    animation: layer_fadeIn_animation 5s ease-in-out;
-    -webkit-animation: layer_fadeIn_animation 5s ease-in-out;
+    animation: layer_fadeIn_animation 5s ease-in-out 0.2s;
+    -webkit-animation: layer_fadeIn_animation 5s ease-in-out 0.2s;
+}
+
+.info_layer::before {
+    position: absolute;
+    top: -11px;
+    right: 5px;
+    border: 6px solid transparent;
+    border-bottom-color: var(--point-color);
+    content: '';
 }
 
 .header_badge_new {
@@ -87,13 +96,4 @@
     -o-border-radius: 50%;
     animation: alertBadge_fadeInOut_animation 1.5s ease-in-out infinite;
     -webkit-animation: alertBadge_fadeInOut_animation 1.5s ease-in-out infinite;
-}
-
-.info_layer::before {
-    position: absolute;
-    top: -11px;
-    right: 5px;
-    border: 6px solid transparent;
-    border-bottom-color: var(--point-color);
-    content: '';
 }
